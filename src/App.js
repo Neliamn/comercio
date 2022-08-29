@@ -5,14 +5,14 @@ import Footer from './components/Footer/Footer';
 import ItemListContainer from './components/Main/ItemListContainer'
 
 const App = () => {
- 
+
   return (
     <>
-    <Header/>
-    <Navbar/>
-    <Main/>
-    <ItemListContainer saludo='Hola'/>
-    <Footer/>
+      <Header />
+      <Navbar />
+      <Main/>
+      <ItemListContainer saludo='Hola' />
+      <Footer />
     </>
   )
 };
