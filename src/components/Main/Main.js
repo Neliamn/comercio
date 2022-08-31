@@ -6,12 +6,8 @@ function onAdd(){
 
 const Main = () => {
     return (
-      <div className="contador">
-        <ItemCount 
-          stock={10} 
-          initial={0} 
-          onAdd = {onAdd}>
-        </ItemCount>
+      <div>
+
       </div>
     )
 };
