@@ -3,6 +3,7 @@ import Navbar from './components/Header/Navbar';
 import Main from './components/Main/Main';
 import Footer from './components/Footer/Footer';
 import ItemListContainer from './components/Main/ItemListContainer'
+import ItemDetailContainer from './components/Main/ItemDetailContainer/ItemDetailContainer';
 
 const App = () => {
 
@@ -12,6 +13,7 @@ const App = () => {
       <Navbar />
       <Main/>
       <ItemListContainer saludo='Hola' />
+      <ItemDetailContainer/>
       <Footer />
     </>
   )
