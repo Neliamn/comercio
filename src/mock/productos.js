@@ -5,7 +5,7 @@ export const productos = [
         description:'es una pelota de tenis',
         price:12,
         stock:10,
-        category:'Juguetes',
+        category:'perros',
         img: 'https://res.cloudinary.com/drlywmdcu/image/upload/v1661916239/2626-kong-pelotas-tenis-mta-2626_ipmjf3.jpg',
     },
     {
@@ -14,7 +14,7 @@ export const productos = [
         description:'es una pelota de caucho',
         price:16,
         stock:10,
-        category:'Juguetes',
+        category:'perros',
         img: 'https://res.cloudinary.com/drlywmdcu/image/upload/v1661916239/12918-pelota-sentidos-karlie-senses-ball-mta-12918_smacmx.jpg',
     },
     {
@@ -23,8 +23,28 @@ export const productos = [
         description:'una camita a cuadros roja',
         price:24,
         stock:12,
-        category:'camas',
+        category:'perros',
         img: 'https://res.cloudinary.com/drlywmdcu/image/upload/v1661916239/16656-cuna-mullida-borreguito-scot_yhonqi.jpg',
+    },
+
+    {
+        id:4,
+        title:'Rascador',
+        description:'Rascador para gatos TK-Pet Ara gris',
+        price:24,
+        stock:12,
+        category:'gatos',
+        img: 'https://res.cloudinary.com/drlywmdcu/image/upload/v1662496639/Rascador_para_gatos_TK-Pet_Ara_gris_rxdthj.jpg',
+    },
+
+    {
+        id:5,
+        title:'Acuario',
+        description:'Kit bettera auto limpieza Marina Betta EZ Care azul',
+        price:52,
+        stock:12,
+        category:'otros',
+        img: 'https://res.cloudinary.com/drlywmdcu/image/upload/v1662496639/13098-IMG00046071_sagnkt.jpg',
     }
 
 

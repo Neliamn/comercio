@@ -2,7 +2,27 @@
     padding: 0px;
     margin: 0px;
 }
+.cabecera {
+    display: flex;
+    flex-direction: row;
+}
+.logo {
+    width:18%;
+    margin-top: 1%;
+    position:relative;
+}
+.logo img {
+    width: 100%;
+}
+.navImagen {
+    width: 100%;
 
+}
+.navImagen img {
+    width: 75%;
+    margin: 0px 150px;
+    
+}
 
 .navegador {
     display: flex;
@@ -17,21 +37,23 @@
     list-style: none;
     display: inline-block;
     padding: 5px 50px;
-    font-size: 25px;
-    border: 1px solid rgba(255, 255, 255, 0.664);
-    background-color: #27b7db;
-}
-
-.menu li a {
+    margin-bottom: -2%;
+    margin-left: -5%;
+    font-size: 35px;
+    background-color: #27b7db;    
     list-style: none;
     text-decoration: none;
     color: #1e1d1d;
 }
+
+
 .carrito {
     display: flex;
     position: absolute;
     right: 15px;
     font-size: 2em;
+    margin-top: 1%;
+    margin-right: 2%;
 }
 
 /*.contador {
