@@ -1,8 +1,8 @@
 export const productos = [
     {
         id:1,
-        title:'Pelota de tenis',
-        description:'es una pelota de tenis',
+        title:'Kong Air Squeakers pelotas de tenis para perros',
+        description:'La marca de juguetes para perro KONG presenta esta vez la clásica pelota de tenis canina, forrada por un material resistente y una tela menos abrasiva de lo habitual para que se conserven intactos los dientes de tu perro. ',
         price:12,
         stock:10,
         category:'perros',
