@@ -21,7 +21,7 @@ const CartProvider = (props) => {
     const sumarItem = (item, cantidad) => {
         const carritoActu = cart.map((prod)=> {
             if (prod.id === item.id) {
-                const productoActu = {...prod, cantidad: prod.cantidad + cantidad,};
+                const productoActu = {...prod, cantidad: cantidad,};
                 return productoActu
             } else {
                 return prod
@@ -39,10 +39,32 @@ const CartProvider = (props) => {
 
     const clear = () => {
         setCart([])
-    }
+    };
+
+    const cantidadCarrito = (id) => {
+        const producto = cart.find ((prod)=> prod.id === id)
+        return producto?.cantidad;
+    };
+
+    const totalPrice = () => {
+        let acumulador = 0
+        cart.forEach((prod) => {
+            acumulador += prod.price * prod.cantidad;
+        });
+        return acumulador
+    };
+
+    const totalCantidad = () => {
+        let cantidadCart = 0
+        cart.forEach ((prod) => {
+            cantidadCart += prod.cantidad;
+        });
+        return cantidadCart
+    };
+
 
     return (
-        <CartContext.Provider value={{ cart, addItem, clear, removeItem }}>
+        <CartContext.Provider value={{ cart, addItem, clear, removeItem, cantidadCarrito, totalPrice, totalCantidad }}>
             {props.children}
         </CartContext.Provider>
     )

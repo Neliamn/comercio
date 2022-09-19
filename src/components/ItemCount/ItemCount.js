@@ -1,18 +1,23 @@
 import React, {useState} from "react";
+import { useEffect } from "react";
 
-const ItemCount = ({stock, initial, onAdd}) => {
+const ItemCount = ({stock, initial = 0, onAdd}) => {
 
 
     const [contador, setContador] = useState (initial);
 
+    useEffect(()=>{
+      setContador (initial)
+    }, [initial])
+
     const sumar = () => {
         contador<stock && setContador(contador +1);
-    }
+    };
     const restar = () => {
         contador>initial && setContador(contador -1);
-    }
+    };
 
-    const agregar =() => {onAdd(contador)}
+    const agregar =() => {onAdd(contador)};
 
 
     return (

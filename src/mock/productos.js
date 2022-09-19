@@ -45,6 +45,26 @@ export const productos = [
         stock:12,
         category:'otros',
         img: 'https://res.cloudinary.com/drlywmdcu/image/upload/v1662496639/13098-IMG00046071_sagnkt.jpg',
+    },
+
+    {
+        id:6,
+        title:'Vitakraft Cat Grass Hierba Gatera',
+        description:'Ofrece a tu gato la hierba fresca viva Vitakraft con la que tu felino se purgara, eliminando así las indigestas bolas de pelo o tricobezoares que pueden atascarse en su tracto digestivo.',
+        price:12,
+        stock:12,
+        category:'gatos',
+        img: 'https://res.cloudinary.com/drlywmdcu/image/upload/v1663611643/snack_gatos_vitakraft_hierba_VIT24031_M_qb6lni.jpg',
+    },
+
+    {
+        id:7,
+        title:'Acuario',
+        description:'Kit bettera auto limpieza Marina Betta EZ Care azul',
+        price:52,
+        stock:12,
+        category:'gatos',
+        img: 'https://res.cloudinary.com/drlywmdcu/image/upload/v1662496639/13098-IMG00046071_sagnkt.jpg',
     }
 
 
