@@ -10,7 +10,7 @@ const CartWidget = ({item}) => {
         <span className="material-icons ">shopping_cart</span>
 
         
-        <span>{totalCantidad()}</span></div>
+        <span>{totalCantidad()===0?'':totalCantidad()}</span></div>
         </>
     )
 };
