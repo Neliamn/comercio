@@ -18,8 +18,8 @@ const ItemDetail = ({ item }) => {
     return (
         <>
             <div className="contDetalle">
-                <div>
-                    <img src={item.img} alt="" />
+                <div className='imgDetail'>
+                    <img  style={{width:'100%'}}src={item.img} alt="" />
                 </div>
                 <div className="detalles">
                     <h3>{item.title}</h3>

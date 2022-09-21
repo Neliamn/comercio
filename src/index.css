@@ -82,7 +82,12 @@
     margin-right: 20%;
     margin-left: 15%;
 }
+
+.imgDetail {
+    width: 60%;
+}
 .detalles {
+    width: 40%;
     margin-left: 5%;
 }
 .botonera {

@@ -3,6 +3,8 @@ import { productos } from '../../mock/productos';
 import ItemList from './ItemList';
 import { useParams } from 'react-router-dom';
 import FadeLoader from "react-spinners/FadeLoader";
+import { collection, getDocs, query, where } from 'firebase/firestore';
+import { db } from '../../firebaseConfig';
 
 
 const ItemListContainer = (props) => {
@@ -12,7 +14,32 @@ const ItemListContainer = (props) => {
   const {categoryId} = useParams();
 
 
-  useEffect(() => {
+  useEffect (() => {
+      const itemCollection = collection(db, 'productos');
+
+      const filtrado = categoryId ? query (itemCollection, where ('category', '==', categoryId)) : itemCollection;
+
+      
+      getDocs(filtrado).then((resp) => {
+        const products = resp.docs.map((prod) => {
+            return {
+                id: prod.id,
+                ...prod.data(),
+            };
+        });
+        setItems(products);
+      })
+      .catch((error) => {
+        console.log (error)
+      })
+      .finally(() => {
+        setLoading(false);
+      })
+  
+}, [categoryId]);
+
+
+ /*  useEffect(() => {
     const getProductos = new Promise((res, rej) => {
       const prodFiltro = productos.filter 
       ((prod) => prod.category === categoryId);
@@ -37,7 +64,7 @@ const ItemListContainer = (props) => {
         setLoading(true);
       };
 
-  }, [categoryId]);
+  }, [categoryId]); */
 
 
   return (
