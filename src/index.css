@@ -79,12 +79,13 @@
 .contDetalle {
     display: flex;
     flex-direction: row;
+    align-self: center;
     margin-right: 20%;
     margin-left: 15%;
 }
 
 .imgDetail {
-    width: 60%;
+    width: 25%;
 }
 .detalles {
     width: 40%;
@@ -130,6 +131,14 @@
     height: 40px;
     background-color: #27b7db;
 
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    align-self: center;
+    
 }
 
 
