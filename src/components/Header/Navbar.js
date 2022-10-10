@@ -8,7 +8,6 @@ const Navbar = () => {
                 <Link to="/category/perros"><li>Perros</li></Link>
                 <Link to="/category/gatos"><li>Gatos</li></Link>
                 <Link to="/category/otros"><li>Otros</li></Link>
-                <Link to="/category/nosotros"><li>Nosotros</li></Link>
             </ul>
             <Link to="/cart"><CartWidget /></Link>
         </nav>

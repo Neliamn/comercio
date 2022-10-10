@@ -2,8 +2,8 @@
 import ItemDetailContainer from "./ItemDetailContainer/ItemDetailContainer";
 import ItemListContainer from "./ItemListContainer";
 import { Routes, Route } from "react-router-dom";
-import CartWidget from "../Header/CartWidget";
 import Cart from "./Cart";
+import Form from "../Form/Form";
 
 
 const Main = () => {
@@ -15,6 +15,7 @@ const Main = () => {
         
         <Route path="/detail/:id" element= {<ItemDetailContainer />} />
         <Route path="/cart" element= {<Cart/>} />
+        <Route path="/form" element= {<Form/>} />
       </Routes>
     </div>
   )

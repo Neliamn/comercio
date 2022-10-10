@@ -58,17 +58,6 @@
 }
 
 
-/*.contador {
-    margin: 100px;
-}
-.contenedor {
-    display: flex;
-    flex-direction: column;
-    width: 18rem;
-    border: 2px solid rgb(48, 146, 243);
-    border-radius: 10%;
-    padding: 20px;
-}*/
 
 .botones {
     display: flex;
@@ -82,13 +71,15 @@
     align-self: center;
     margin-right: 20%;
     margin-left: 15%;
+    margin-bottom: 20%;
+    margin-top: 2%;
 }
 
 .imgDetail {
     width: 25%;
 }
 .detalles {
-    width: 40%;
+    width: 60%;
     margin-left: 5%;
 }
 .botonera {
@@ -102,6 +93,7 @@
     width: 90%;
     margin: 2%;
     justify-content: space-around;
+    margin-bottom: 50px;
     
 }
 
@@ -115,6 +107,27 @@
 
 .listaCompra button {
     width: 10%;
+    
+}
+
+.carritoTotal {
+    text-align-last: right;
+    margin-right: 10%;
+    margin-bottom: 10%;
+
+}
+
+.carritoTotal button{
+	width:12%;
+	padding:8px 16px;
+    padding-right: 25px;
+	margin-top:32px;
+    margin-left: 5px;
+	border:1px solid#27b7db;
+	border-radius:5px;
+	color:rgb(8, 8, 8);
+	background-color:#27b7db;
+
 }
 
 .carritoVacio {
@@ -133,20 +146,71 @@
 
 }
 
-.formulario {
+
+.contenedorForm {
     display: flex;
     flex-direction: column;
-    width: 25%;
-    align-self: center;
+    justify-content: space-around;
+    margin-bottom: 160px;
     
 }
+
+.error {
+    color: red;
+    font-size: small;
+}
+.formulario {
+	width:350px;
+	padding:30px;
+	border-radius:10px;
+	margin:10px;
+    align-self: center;
+	background-color:#a9e8f8;   
+}
+
+.formulario label {
+    width:80px;
+	font-weight:bold;
+	display:inline-block;
+}
+
+.formulario input {
+	width:200px;
+	padding:3px 10px;
+	border:1px solid #f6f6f6;
+	border-radius:3px;
+	background-color:#f6f6f6;
+	margin:8px 0;
+	display:inline-block;
+}
+
+.enviar{
+	width:100%;
+	padding:8px 16px;
+	margin-top:32px;
+	border:1px solid#27b7db;
+	border-radius:5px;
+	display:block;
+	color:#fff;
+	background-color:#27b7db;
+} 
+
+.gracias {
+    width:450px;
+	padding:30px;
+	border-radius:10px;
+	margin:auto;
+	background-color:#a9e8f8; 
+    margin-bottom: 250px;
+}
+
 
 
 /* footer */
 
 footer {
     bottom: 0px;
-    background-color: #8350af;
+    background-color:#176376;
     padding-top: 10px;
     position: relative;
     width: 100%;

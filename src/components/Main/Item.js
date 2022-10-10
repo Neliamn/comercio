@@ -4,17 +4,9 @@ import { Link } from "react-router-dom";
 const Item = ({id,img,price,stock,title}) => {
 
 
-function onAdd(){
-    console.log("Se han añadido " );
-}
 
 return (
-    /*<div className='contenedor'>
-        <h3>{title}</h3>
-        <img src={img} alt="" />
-        <p>{price}€</p>
-        <ItemCount stock={Item.stock} />    
-    </div>*/
+
     <div className="card col col-md-2 m-2 text-center">
      <img className="card-img-top" src={img} alt="Imagen artículo" />
         <div className="card-body">

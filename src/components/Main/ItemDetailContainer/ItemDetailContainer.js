@@ -1,6 +1,5 @@
 import {useEffect, useState} from "react";
 import ItemDetail from "../ItemDetail/ItemDetail";
-import { productos } from "../../../mock/productos";
 import { useParams } from "react-router-dom";
 import { db } from '../../../firebaseConfig';
 import {getDoc, doc, collection } from 'firebase/firestore';
@@ -12,7 +11,7 @@ const ItemDetailContainer = () => {
 
 const {id} = useParams();
 
-const idNumero = Number (id);
+
 
 
     useEffect(() => {

@@ -30,21 +30,10 @@ const ItemCount = ({stock, initial = 0, onAdd}) => {
             <button type="button" className="btn btn-primary col-2" onClick={sumar}>+</button>
           </div>
           <div className="row">
-            <button className="btn btn-secondary w-50 mt-1" disabled={(contador == 0)} onClick={agregar}>Añadir al carrito</button>
+            <button className="btn btn-secondary w-50 mt-1" disabled={(contador === 0)} onClick={agregar}>Añadir al carrito</button>
           </div>  
         </div>
       </div>
-      /*<div className="card">
-        <h1>{}</h1>
-        <div className="botones">
-        <button onClick={restar}>-</button>
-        <p>{contador}</p>
-        <button onClick={sumar}>+</button>
-        
-        </div>
-        <button disabled={(contador == 0)} onClick={onAdd}>Añadir al carrito</button>
-        
-      </div>*/
     )
   };
   

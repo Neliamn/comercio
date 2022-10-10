@@ -35,7 +35,7 @@ const CartProvider = (props) => {
         setCart(eliminando);
     };
 
-    console.log(cart)
+
 
     const clear = () => {
         setCart([])

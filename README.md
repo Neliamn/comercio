@@ -1,70 +1,94 @@
-# Getting Started with Create React App
+# Supermercado de productos de mascotas
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p>Proyecto para una petshop desarrollada en React.</p> 
 
-## Available Scripts
+## Tenologías usadas
 
-In the project directory, you can run:
+<p align="center">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=react,html,js,git,github,firebase" />
+  </a>
+</p>
 
-### `npm start`
+## ¿De qué trata este proyecto?
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Este proyecto despliega una aplicación web en un puerto determinado. Esta web contiene el negocio relacionado con una tienda de mascotas, donde se pueden comprar artículos cribando por categorías.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+La página dispone de un carrito de la compra donde se iran sumando los artículos que se han ido añadiendo durante el proceso de compra.
 
-### `npm test`
+Al finalizar, se rellenará un formulario con los datos del cliente y el pedido quedará registrado en una base de datos.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Requisitos.
 
-### `npm run build`
+Para desplegar este proyecto es necesaria la instalación de Node.
+Dependiendo de su sistema operativo, el proceso de instalación puede variar. 
+En cualquier caso los pasos para la instalación del mismo lo podemos encontrar en la página oficial de <a href="https://nodejs.org/es/">Node</a>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Una vez instalado Node, se necesita instalar un gestor de paquetes como <a href="https://www.npmjs.com/">Npm</a>
+.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Con ```npm``` instalado, podremos instalar la extensión que nos permite crear proyectos ```React```.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+``` 
+install -g create-react-app 
+```
 
-### `npm run eject`
+## ¿Cómo se creó este proyecto?
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Este proyecto se creó usando el siguiente comando:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```create-react-app comercio```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Este comando nos creó la estructura básica de un proyecto de ```React```.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Instalación de dependencias
 
-## Learn More
+El proyecto necesitó las siguientes dependencias:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+<ul>
+    <li>react-router-dom</li>
+    <li>react-spinners</li>
+    <li>firebase</li>
+</ul>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Estas dependencias se añadieron usando el gestor de paquetes ```npm```. Ejemplo:
 
-### Code Splitting
+```
+npm install react-router-dom
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Recursos
 
-### Analyzing the Bundle Size
+El soporte de datos de esta aplicación viene dado de la mano de <a href="https://firebase.google.com/">Firebase</a>
+, que nos proporciona una persistencia de datos de la aplicación. Las entidades almacenadas son:
+<ul>
+    <li>Productos</li>
+    <li>Pedidos</li>
+</ul>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+La entidad producto tiene una estructura como esta:
 
-### Making a Progressive Web App
+```javascript
+     {
+        title:'Cama roja',
+        description:'una camita a cuadros roja',
+        price:24,
+        stock:12,
+        category:'perros',
+        img: 'https://res.cloudinary.com/drlywmdcu/image/upload/v1661916239/16656-cuna-mullida-borreguito-scot_yhonqi.jpg',
+    }
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## ¿Cómo se pone en marcha el proyecto?
 
-### Advanced Configuration
+Este proyecto se pone en marcha ejecutando el siguiente comando:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+```
+npm start
+```
 
-### Deployment
+Esto crea un endpoint con un puerto determinado que podrá ser abierto en un explorador de internet.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```
+http://localhost:3000/
+```
